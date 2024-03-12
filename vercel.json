@@ -1,8 +1,10 @@
 {
+
     "builds": [{
         "src": "DPS/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+
     }],
     "routes": [
         {
@@ -11,9 +13,4 @@
         }
     ],
 
-  "functions": {
-    "api/**": {
-      "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
-    }
-  }
 }
